@@ -40,3 +40,31 @@ echo Primera fruta: ${fruta1}
 echo Segunda fruta: ${fruta2}
 echo Tercera fruta: ${fruta3}
 echo Cuarta fruta: ${fruta4}
+
+Arrays
+-------
+
+expr 
+-------
+
+let -> operaciones aritmeticas basicas
+    let a=$a+1
+
+expr -> operaciones aritmeticas sencillas con enteros
+    ->  operadores normales -> + - * / %
+    ->  operadores especiales -> () * / -> hay que escaparlos, con \ 
+    ->  ejemplos        3 * (4 + 3) / 2 -> 10
+                        3 \* \(3 + 4\) \/ 2
+    ->  palabras reservadas de expr
+        - match     ->  comprueba si dos cadenas son iguales
+            $cadena2= `expr match $cadena1` 
+        - lenght    ->  devuelva la longitud de una cadena
+            longitud= `expr lenght $cadena`
+        - index     ->  devuelve la Primera posicion de la cadena donde se encuentra un caracter
+            letra = 'a'
+            posicion= `expr index $cadena $letra`
+        - substr    ->  devuelve una subcadena -> 'empieza a contar en 1'
+            dni = '01234567H'
+            $numero = `expr substr $dni 1 8`
+
+bc -> operaciones aritmeticas
