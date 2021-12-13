@@ -68,3 +68,123 @@ expr -> operaciones aritmeticas sencillas con enteros
             $numero = `expr substr $dni 1 8`
 
 bc -> operaciones aritmeticas
+        - scale -> indicamos el numero de decimales
+
+        resultado=$(echo 'scale=2;($a + $b +$c + $d)/4' | bc)
+
+        Podríamos aplicar la ley de Coulomb (F = K(q1·q2)/r2):
+            scale=7
+            9*10^9*1*10^-6*2.5*10^-6/0.05^2
+            9.0000000
+        
+crear condiciones
+------------------
+crear condiciones:
+1º forma:
+[ condicion ]
+2º forma:
+test condicion
+
+operando1 operador operando2
+
+operadores UNARIOS -> para evaluar ficheros
+
+[ -operador fichero ]
+test -operador fichero
+
+-f -> fichero existe y es regular
+-r -> fichero existe y es regular, y tiene permiso de lectura
+-w -> fichero existe y es regular, y tiene permiso de escritura
+-x -> fichero existe y es regular, y tiene permiso de ejecucion
+-h -> enlace simbolico 
+-d -> directorio
+-c -> dispositivo de tipo caracter 
+-b -> dispositivo de tipo bloque
+-u -> activo el SUID
+-g -> activo el SGID
+-s -> longitud mayor a 0
+
+operadores BINARIOS
+
+Evaluacion de cadenas
+==  [ $cad1 = $cad1 ]
+!=  [ $cad1 != $cad1 ]
+
+Evaluacion numerica
+-eq -ieq -le -lt -ge -gt -ne 
+
+operadores LOGICOS
+-a o &&
+-o o ||
+    [ -r $fichero ] -a [ -w $fichero ] -a [ -x $fichero ]
+    [[ -r $fich && -w $fich && -x $fich ]]
+    [[ $a -gt 0 && ($a -lt 500 || -w $ $fichero) ]]
+
+ESTRUCTURAS DE CONTROL
+---------------------
+
+CONDICIONALES
+-------------
+if [sintaxis]
+
+1º
+    if condicion
+        then 
+            verdadero
+        else 
+            if condicion 
+                then
+                    verdadero
+                else
+                    falso
+            fi
+    fi
+2º
+    if condicion
+        then 
+            verdadero
+        elif condicion 
+            then
+                verdadero
+            else
+                falso
+        fi
+    fi
+
+case $op in 
+ -ne 1) echo " "
+        echo " "
+        ....
+        ;;
+ -eq 2) echo " "
+        echo " "
+        ....
+        ;;
+ *) sentencias_por_defecto
+esac
+
+
+REPETITIVAS
+------------
+for 
+
+for variable in lista
+    do
+        comandos
+    done 
+
+for elemento in $* ->"las llaves son opcionales"
+    do {
+        echo $elemento
+        ....
+    }done 
+for ((variable=valor_inicial;condicion;incremento))
+    do {
+        comandos
+    }done
+----------------------------------
+${#cadena}
+${cadena:inicio:tamaño} -> extrae subcadenas
+while 
+until
+
