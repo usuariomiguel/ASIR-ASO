@@ -5,7 +5,7 @@ echo Y son los siguientes: $*
 cp colores col.sh
 echo El codigo de retorno de la copia es: $?
 
-#shift
+#SHIFT
 #uno dos tres cuatro cinco seis 
 echo El numero de parametros pasados es: $#
 echo Y son los siguientes: $*
@@ -22,7 +22,7 @@ shift 3
 echo El numero de parametros pasados es: $#
 echo Y son los siguientes: $*
 
-#read
+#READ
 #varias posibilidades
 #1
 echo -n "Dime tu nombre: "
@@ -43,6 +43,29 @@ echo Cuarta fruta: ${fruta4}
 
 Arrays
 -------
+tabla = (1 2 3 4 5 )
+tabla=(Ana Luis Jose "Maria del Carmen")
+tabla[indice]
+
+#número de elementos que tiene la tabla
+${tabla[índice]} → extrae un valor
+${#tabla[@]} → devuelve número de elementos
+${tabla[@]} → devuelve todos los elementos
+${#cadena} → devuelve la longitud de la cadena
+
+Parámetros posicionales
+$./script 	par1 	par2 	par3 	parametro4….
+$0	$1	$2	$3 	hasta $9
+(nombre 
+scripts $0)
+pero si abro corchetes puedo seguir ${10}..
+
+shift [nº] empieza por 1 y no por 0
+
+$* → devuelve una cadena con todos los parámetros posicionales, sin incluir el nombre del script
+$# → numero de parametros posicionales, sin incluir el nombre del script
+$? → devuelve un código de retorno  del último comando ejecutado
+	desde 0 hasta xxxxxxx
 
 expr 
 -------
