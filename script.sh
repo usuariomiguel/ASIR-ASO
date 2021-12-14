@@ -42,7 +42,7 @@ echo Tercera fruta: ${fruta3}
 echo Cuarta fruta: ${fruta4}
 
 Arrays
--------
+############
 tabla = (1 2 3 4 5 )
 tabla=(Ana Luis Jose "Maria del Carmen")
 tabla[indice]
@@ -68,7 +68,7 @@ $? → devuelve un código de retorno  del último comando ejecutado
 	desde 0 hasta xxxxxxx
 
 expr 
--------
+#############
 
 let -> operaciones aritmeticas basicas
     let a=$a+1
@@ -101,7 +101,7 @@ bc -> operaciones aritmeticas
             9.0000000
         
 crear condiciones
-------------------
+################
 crear condiciones:
 1º forma:
 [ condicion ]
@@ -144,10 +144,10 @@ operadores LOGICOS
     [[ $a -gt 0 && ($a -lt 500 || -w $ $fichero) ]]
 
 ESTRUCTURAS DE CONTROL
----------------------
+#############
 
 CONDICIONALES
--------------
+#############
 if [sintaxis]
 
 1º
@@ -188,7 +188,7 @@ esac
 
 
 REPETITIVAS
-------------
+############
 for 
 
 for variable in lista
@@ -205,9 +205,23 @@ for ((variable=valor_inicial;condicion;incremento))
     do {
         comandos
     }done
-----------------------------------
+############
 ${#cadena}
 ${cadena:inicio:tamaño} -> extrae subcadenas
-while 
-until
 
+while --> repite cuando son verdaderas 
+resp='n'
+while [ $resp -ne 's' ]
+    do
+        read resp -p 'Quieres continuar (si/no)? '
+    done
+echo 'Fuera del bucle'
+
+until --> repite hasta que son verdaderas
+
+until [ who | grep -i 'pepe' ]
+    do  
+        echo 'Pepe no esta conectado' 
+    done
+echo 'Pepe acaba de conectar'
+###########
