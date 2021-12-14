@@ -16,3 +16,8 @@ done < /etc/passwd
 echo Existen $cont usuarios
 IFS=$OIFS
 #volvemos al separador "space"
+Resultado:
+nobody
+compartir
+miguel
+Existen 3 usuarios
