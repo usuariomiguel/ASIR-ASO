@@ -37,3 +37,11 @@ done < /scripts/agenda.txt
 #La ruta del fichero con los datos separador por #
 IFS=$OIFS
 
+Solucion:
+
+NOMBRE		APELLIDO		TELEFONO		CORREO		CUMPLEAÑOS
+------------------------------------------------------------------------------------------
+nombre		apellido		tel		email		fechac
+Ana		Ranz		6345678090		anita.ranz@gmail.com		26/12/1992
+
+
