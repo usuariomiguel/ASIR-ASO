@@ -34,5 +34,13 @@ while read nom ape tel email fn
 do
     echo -e "$nom\t\t$ape\t\t$tel\t\t$email\t\t$fn"
 done < /scripts/agenda.txt
+
+Salida:
+
+NOMBRE		APELLIDO		TELEFONO		CORREO		CUMPLEAÑOS
+------------------------------------------------------------------------------------------
+nombre		apellido		tel		email		fechac
+Ana		Ranz		6345678090		anita.ranz@gmail.com		26/12/1992
+
 IFS=$OIFS
 
