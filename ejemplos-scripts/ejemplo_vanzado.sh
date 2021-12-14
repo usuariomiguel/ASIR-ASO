@@ -8,6 +8,7 @@ yad --list --title="Lista" --width=400 --height=400 --center
 yad --calendar --title="Calendario" --width=400 --height=400 --center
 
 #!/usr/bin/env bash
+#saca una una lista de una columna muy bonita
 yad --list --title="Gestion Agenda" --width=300 --height=250 \
 --center \
 --column=A \
