@@ -21,3 +21,18 @@ nobody
 compartir
 miguel
 Existen 3 usuarios
+
+##################
+#!/usr/bin/env bash
+clear
+OIFS=$IFS
+IFS=:
+#cambia el separador por defecto "space" por ":"
+echo -e "NOMBRE\t\tAPELLIDO\t\tTELEFONO\t\tCORREO\t\tCUMPLEAÑOS"
+while read nom ape tel email fn
+##separa los campos por el espacio de /etc/passwd por las variables 1nom 2ape 3tel 4email 5fn
+do
+    echo -e "$nom\t\t$ape\t\t$tel\t\t$email\t\t$fn"
+done < /scripts/agenda.txt
+IFS=$OIFS
+
