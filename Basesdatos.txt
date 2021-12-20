@@ -5,13 +5,19 @@ VARIABLE
     Contiene la cadena de conexion a MySQL
     MySQL= 'mysql -u root -pClave_00'
 
+#!/usr/bin/env bash
+MySQL= 'mysql -u root -pClave_00'
+echo 'voy a trabajar con bases de datos'
 $mysql<<END
-    create database prueba;
+    create database personal;
     use prueba;
-    create table uno (id int auto_increment primary key not null, 
+    create table amigos (id int auto_increment primary key not null, 
     nombre varchar(20),
     apellido varchar(20))
+    show tables;
+    desc amigos;
 END
+echo "YA HE TERMINADO"
 $VARIABLE<<ETIQUETA <-- inicio del codigo MySQL
     codigo
 ETIQUETA <-- fin del codigo MySQL
