@@ -32,5 +32,7 @@ anno=`echo $fn | cut -f3 -d'/'`
 fn=${anno}"-"${mes}"-"${dia} 
 
 $mysql<<END
-    use personal
-    insert into amigos (nom,ape,tel,email,fn,dia,mes,anno)
+    use personal;
+    insert into amigos (nom,ape,tel,email) values ("${nom}","${ape}","${tel}","${email}","${fn}","${dia}","${mes}"","${anno}")
+    select * from amigos;
+END
