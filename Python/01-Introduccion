@@ -122,3 +122,23 @@ int(), float(), str()
         Traceback (most recent call last):
         File "<stdin>", line 1, in <module>
         TypeError: can't multiply sequence by non-int of type 'str'
+
+TUPLAS
+______
+
+Pep 8: tiene que ir entre parenteris
+
+Son variables que permite almacenar varios datos inmutables de diferentes tipos.
+
+Una vez que se ha creado no me puede modificar o borrar, mientras esta en ejecucion
+
+tupla = ('hola',12,3.4,True,'Caracola')
+
+LISTAS
+______
+
+Pep 8: tiene que ir entre corchetes
+
+Permite almacenar varios datos de diferentes tipos.
+
+lista = ['hola',12,4.5,True,'caracola']
