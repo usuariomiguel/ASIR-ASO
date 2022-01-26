@@ -1,26 +1,27 @@
+
 Python
 ======
 
-Lenguaje de programacion interpretado, de alto nivel, 
-multiplataforma, de tipado dinamico y multiparadigma
+Lenguaje de programación interpretado, de alto nivel, 
+multiplataforma, de tipado dinámico y multiparadigma
 
 --Interpretado    --> no necesita un programa compilador
 --De alto nivel   --> su sintaxis se aproxima al lenguaje humano
 --Multiplataforma --> puede ser ejecutado en diferentes SO
---Tipado dinamico --> no necesitamos indicar de que tipo son los datos en variables
+--Tipado dinámico --> no necesitamos indicar de qué tipo son los datos en variables
 --Multiparadigma  --> tiene diferentes tecnicas de programacion 
 
-Pep 8 --> normas que revisa que el programa este bien estructurado
+Pep 8 --> normas que revisa que el programa esté bien estructurado
 
 Variables
 __________
 
 nombre = variable
 
-Pep 8: antes y despues del signo igual DEBE haber uno (y solo uno) espacio en blanco
+Pep 8: antes y después del signo igual DEBE haber uno (y solo uno) espacio en blanco
     nombre = 'pepe'
 
-Pep 8: el nombre de las constantes DEBE ir en mayuscula
+Pep 8: el nombre de las constantes DEBE ir en mayúscula
     PI = 3.1416
 
 Tipos de datos:
@@ -41,18 +42,18 @@ Listas,Tuplas,Diccionarios
 Operadores
 __________
 
-Aritmeticos: + - * /
+Aritméticos: + - * /
             ** Potencia
-            // Cociente de la division entera
-            % Resto de la division entera
+            // Cociente de la división entera
+            % Resto de la división entera
 
-            Notacion compacta
+            Notación compacta
                 a = a + b --> a +=b
 
 Relacionales: == != < > <= >=
 
-Logicos:    and ->  True cuando las condiciones son true
-                    Falsa cuando hay una condicion falsa
+Lógicos:    and ->  True cuando las condiciones son true
+                    Falsa cuando hay una condición falsa
             or  ->  Falsa solo cuando las dos son falsas
                     True cuando no hay dos condiciones falsas
             xor ->  Falsa cuando las dos condiciones son iguales
@@ -61,48 +62,48 @@ Logicos:    and ->  True cuando las condiciones son true
 Comentarios
 __________
 
-Pep 8: comentarios en la misma linea que el codigo, DEBE separarse con DOS espacios en blanco.
-Pep 8: Despues de el simbolo # DEBE ir un solo espacio en blanco
+Pep 8: comentarios en la misma línea que el código, DEBE separarse con DOS espacios en blanco.
+Pep 8: Despues de el símbolo # DEBE ir un solo espacio en blanco
 
-# Comentarios de una linea
+# Comentarios de una línea
 
 """Comentarios 
-multilinea"""
+multilínea"""
 
 Función print ()
 ________________
 
-Saca VARIABLES por pantalla oo muestra MENSAJES
+Saca VARIABLES por pantalla no muestra MENSAJES
 
 print("mensaje",variable,sep="-",end="--")
 
-sep --> indica caracter por el cual se van a separar 
-end --> como va a terminar la expr que estoy explicando
+sep --> indica carácter por el cual se van a separar 
+end --> cómo va a terminar la expr que estoy explicando
 
 nombre = pepe
 print("hola",nombre,sep="$",end="fin")
-hola$pepefin
+hola$pepe fin
 
-Funcion input()
+Función input()
 _______________
 
 Nos permite realizar entradas de datos por teclado
 
-python2 --> input()     - numeros 
+python2 --> input()     - números 
             raw_input() - cadenas
 
-num = input("Dime un numero")
+num = input("Dime un número")
 
 python3 --> input()     - cadenas
 
 Para hacer transformaciones de tipo, usaremos las funciones de casting:
 int(), float(), str()
 
-    --Ejemplo donde quiero introducir numeros ¡en variables con input--
+    --Ejemplo donde quiero introducir números ¡en variables con input--
 
         --Forma Correcto--
 
-        num = int(input("Dime un numero: "))
+        num = int(input("Dime un número: "))
         >>> numero2 = int(input("DIme numero: "))
         DIme numero: 56
         >>> numero3 = int(input("DIme numero: "))
@@ -112,10 +113,10 @@ int(), float(), str()
 
         --Forma incorrecto--
 
-        >>> numero1 = input("dime numero")
-        dime numero3
+        >>> número 1 = input("dime numero")
+        dime numero 3
         >>> numero2 = input("dime numero2")
-        dime numero256
+        dime numero 256
         >>> numero1 + numero2
         '356'
         >>> numero1 * numero2
@@ -126,11 +127,11 @@ int(), float(), str()
 TUPLAS
 ______
 
-Pep 8: tiene que ir entre parenteris
+Pep8: tiene que ir entre paréntesis
 
-Son variables que permite almacenar varios datos inmutables de diferentes tipos.
+Son variables que permiten almacenar varios datos inmutables de diferentes tipos.
 
-Una vez que se ha creado no me puede modificar o borrar, mientras esta en ejecucion
+Una vez que se ha creado no se puede modificar o borrar, mientras está en ejecución
 
 tupla = ('hola',12,3.4,True,'Caracola')
 
@@ -142,3 +143,4 @@ Pep 8: tiene que ir entre corchetes
 Permite almacenar varios datos de diferentes tipos.
 
 lista = ['hola',12,4.5,True,'caracola']
+
