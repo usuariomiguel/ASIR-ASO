@@ -268,12 +268,7 @@ ___________
         print(capi)       
         dict_values(['Madrid', 'Roma', 'Paris', 'Varsovia', 'Viena', 'El Cairo', 'Vilna', 'Lisboa', 'Lima', 'Caracas'])
 
-<<<<<<< HEAD
     diccionario.clear() ->  vacia el diccionario
     diccionario['clave']=valor   ->  
     diccionario.has_key(valor)  -> devuelve T or F si la clave existe en el diccionario
     
-=======
-lista = ['hola',12,4.5,True,'caracola']
-
->>>>>>> 1a58c1695d197fdfd3f200b57e6e78bb5109f165
