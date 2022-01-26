@@ -12,47 +12,48 @@ ________________________________________________________________________________
 
     Pep 8 --> normas que revisa que el programa este bien estructurado
 
+
 Variables
 __________
 
     nombre = variable
 
-    Pep 8: antes y despues del signo igual DEBE haber uno (y solo uno) espacio en blanco
+    Pep 8: antes y después del signo igual DEBE haber uno (y solo uno) espacio en blanco
         nombre = 'pepe'
 
-    Pep 8: el nombre de las constantes DEBE ir en mayuscula
+    Pep 8: el nombre de las constantes DEBE ir en mayúscula
         PI = 3.1416
 
-    Tipos de datos:
-            Cadenas (string)
-                nombre = 'pepe'
-                multi = '''esto es una Cadena 
-                            multilinea'''
-            Enteros
-                edad = 18
-            Decimales
-                precio = 2.97
-            Booleanos
-                ok = True
-                ok = False
+        Tipos de datos:
+                Cadenas (string)
+                    nombre = 'pepe'
+                    multi = '''esto es una Cadena 
+                                multilinea'''
+                Enteros
+                    edad = 18
+                Decimales
+                    precio = 2.97
+                Booleanos
+                    ok = True
+                    ok = False
 
-    Listas,Tuplas,Diccionarios
+        Listas,Tuplas,Diccionarios
 
 Operadores
 __________
 
-    Aritmeticos: + - * /
+    Aritméticos: + - * /
                 ** Potencia
-                // Cociente de la division entera
-                % Resto de la division entera
+                // Cociente de la división entera
+                % Resto de la división entera
 
-                Notacion compacta
+                Notación compacta
                     a = a + b --> a +=b
 
-    Relacionales: == != < > <= >=
+        Relacionales: == != < > <= >=
 
-    Logicos:    and ->  True cuando las condiciones son true
-                        Falsa cuando hay una condicion falsa
+    Lógicos:    and ->  True cuando las condiciones son true
+                        Falsa cuando hay una condición falsa
                 or  ->  Falsa solo cuando las dos son falsas
                         True cuando no hay dos condiciones falsas
                 xor ->  Falsa cuando las dos condiciones son iguales
@@ -61,29 +62,29 @@ __________
 Comentarios
 __________
 
-    Pep 8: comentarios en la misma linea que el codigo, DEBE separarse con DOS espacios en blanco.
-    Pep 8: Despues de el simbolo # DEBE ir un solo espacio en blanco
+    Pep 8: comentarios en la misma línea que el código, DEBE separarse con DOS espacios en blanco.
+    Pep 8: Despues de el símbolo # DEBE ir un solo espacio en blanco
 
-    # Comentarios de una linea
+    # Comentarios de una línea
 
     """Comentarios 
-    multilinea"""
+    multilínea"""
 
 Función print ()
 ________________
 
-    Saca VARIABLES por pantalla oo muestra MENSAJES
+    Saca VARIABLES por pantalla no muestra MENSAJES
 
-    print("mensaje",variable,sep="-",end="--")
+        print("mensaje",variable,sep="-",end="--")
 
-    sep --> indica caracter por el cual se van a separar 
-    end --> como va a terminar la expr que estoy explicando
+    sep --> indica carácter por el cual se van a separar 
+    end --> cómo va a terminar la expr que estoy explicando
 
     nombre = pepe
     print("hola",nombre,sep="$",end="fin")
-hola$pepefin
+    hola$pepe fin
 
-Funcion input()
+Función input()
 _______________
 
     Nos permite realizar entradas de datos por teclado
@@ -91,18 +92,18 @@ _______________
     python2 --> input()     - numeros 
                 raw_input() - cadenas
 
-    num = input("Dime un numero")
+    num = input("Dime un número")
 
     python3 --> input()     - cadenas
 
     Para hacer transformaciones de tipo, usaremos las funciones de casting:
     int(), float(), str()
 
-    --Ejemplo donde quiero introducir numeros ¡en variables con input--
+    --Ejemplo donde quiero introducir números ¡en variables con input--
 
         --Forma Correcto--
 
-        num = int(input("Dime un numero: "))
+        num = int(input("Dime un número: "))
         >>> numero2 = int(input("DIme numero: "))
         DIme numero: 56
         >>> numero3 = int(input("DIme numero: "))
@@ -112,10 +113,10 @@ _______________
 
         --Forma incorrecto--
 
-        >>> numero1 = input("dime numero")
-        dime numero3
+        >>> número 1 = input("dime numero")
+        dime numero 3
         >>> numero2 = input("dime numero2")
-        dime numero256
+        dime numero 256
         >>> numero1 + numero2
         '356'
         >>> numero1 * numero2
@@ -267,7 +268,12 @@ ___________
         print(capi)       
         dict_values(['Madrid', 'Roma', 'Paris', 'Varsovia', 'Viena', 'El Cairo', 'Vilna', 'Lisboa', 'Lima', 'Caracas'])
 
+<<<<<<< HEAD
     diccionario.clear() ->  vacia el diccionario
     diccionario['clave']=valor   ->  
     diccionario.has_key(valor)  -> devuelve T or F si la clave existe en el diccionario
     
+=======
+lista = ['hola',12,4.5,True,'caracola']
+
+>>>>>>> 1a58c1695d197fdfd3f200b57e6e78bb5109f165
