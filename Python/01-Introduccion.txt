@@ -1,0 +1,276 @@
+-----------------------python---------------------------
+   Lenguaje de programación interpretado, de alto nivel,
+   multiplataforma, de tipado dinámico y multiparadigma
+ 
+   --Interpretado    --> no necesita un programa compilador
+   --De alto nivel   --> su sintaxis se aproxima al lenguaje humano
+   --Multiplataforma --> puede ser ejecutado en diferentes SO
+   --Tipado dinámico --> no necesitamos indicar de qué tipo son los datos en variables
+   --Multiparadigma  --> tiene diferentes tecnicas de programacion
+ 
+   Pep 8 --> normas que revisa que el programa esté bien estructurado
+ 
+Variables
+__________
+ 
+   nombre = variable
+ 
+   Pep 8: antes y después del signo igual DEBE haber uno (y solo uno) espacio en blanco
+       nombre = 'pepe'
+ 
+   Pep 8: el nombre de las constantes DEBE ir en mayúscula
+       PI = 3.1416
+ 
+       Tipos de datos:
+               Cadenas (string)
+                   nombre = 'pepe'
+                   multi = '''esto es una Cadena
+                               multilinea'''
+               Enteros
+                   edad = 18
+               Decimales
+                   precio = 2.97
+               Booleanos
+                   ok = True
+                   ok = False
+ 
+       Listas,Tuplas,Diccionarios
+ 
+Operadores
+__________
+ 
+   Aritméticos: + - * /
+               ** Potencia
+               // Cociente de la división entera
+               % Resto de la división entera
+ 
+               Notación compacta
+                   a = a + b --> a +=b
+ 
+       Relacionales: == != < > <= >=
+ 
+   Lógicos:    and ->  True cuando las condiciones son true
+                       Falsa cuando hay una condición falsa
+               or  ->  Falsa solo cuando las dos son falsas
+                       True cuando no hay dos condiciones falsas
+               xor ->  Falsa cuando las dos condiciones son iguales
+                       True cuando una de las es true y otra falsa
+ 
+ 
+Comentarios
+__________
+ 
+   Pep 8: comentarios en la misma línea que el código, DEBE separarse con DOS espacios en blanco.
+   Pep 8: Despues de el símbolo # DEBE ir un solo espacio en blanco
+ 
+   # Comentarios de una línea
+ 
+   """Comentarios
+   multilínea"""
+ 
+Función print ()
+________________
+ 
+   Saca VARIABLES por pantalla no muestra MENSAJES
+ 
+       print("mensaje",variable,sep="-",end="--")
+ 
+   sep --> indica carácter por el cual se van a separar
+   end --> cómo va a terminar la expr que estoy explicando
+ 
+   nombre = pepe
+   print("hola",nombre,sep="$",end="fin")
+   hola$pepe fin
+ 
+Función input()
+_______________
+ 
+   Nos permite realizar entradas de datos por teclado
+ 
+   python2 --> input()     - números
+               raw_input() - cadenas
+ 
+   num = input("Dime un número")
+ 
+   python3 --> input()     - cadenas
+ 
+   Para hacer transformaciones de tipo, usaremos las funciones de casting:
+   int(), float(), str()
+ 
+   --Ejemplo donde quiero introducir números ¡en variables con input--
+ 
+       --Forma Correcto--
+ 
+       num = int(input("Dime un número: "))
+       >>> numero2 = int(input("DIme numero: "))
+       DIme numero: 56
+       >>> numero3 = int(input("DIme numero: "))
+       DIme numero: 45
+       >>> numero2 * numero3
+       2520
+ 
+       --Forma incorrecto--
+ 
+       >>> número 1 = input("dime numero")
+       dime numero 3
+       >>> numero2 = input("dime numero2")
+       dime numero 256
+       >>> numero1 + numero2
+       '356'
+       >>> numero1 * numero2
+       Traceback (most recent call last):
+       File "<stdin>", line 1, in <module>
+       TypeError: can't multiply sequence by non-int of type 'str'
+ 
+TUPLAS
+______
+ 
+   Pep8: tiene que ir entre paréntesis
+ 
+   Son variables que permiten almacenar varios datos inmutables de     diferentes tipos.
+   Una vez que se ha creado no se puede modificar o borrar, mientras está en ejecución
+ 
+   tupla = ('hola',12,3.4,True,'Caracola')
+ 
+LISTAS
+______
+ 
+   Pep 8: tiene que ir entre corchetes
+ 
+   Permite almacenar varios datos de diferentes tipos.
+ 
+   lista = ['hola',12,4.5,True,'caracola']
+ 
+   Añadir elementos:
+   ----------------
+ 
+   lista.append ("nuevo elemento")
+   lista.insert (posición,"nuevo elemento")
+ 
+   lista = ['hola',12,3.4,True,'Caracola']
+ 
+       #agregar
+ 
+       lista[0] = "hola pepe"
+       print (lista[2])
+       lista.append("655453425")#agrega automáticamente elemento en la lista
+       lista = lista + [89]
+       lista.insert(1,"cadena")
+       print(lista)
+ 
+   Eliminar elementos:
+   -------------------
+ 
+   lista.pop(posición)
+   lista.remove('elemento')
+ 
+   lista = ['hola',12,3.4,True,'Caracola']
+ 
+       #eliminar
+ 
+       lista.pop(0)#elimina elemento en la posición 0
+       print(lista)
+       lista.remove('caracola')#eliminar elemento caracola
+       print(lista)
+       print.pop()#elimina elemento en la última posición por defecto
+ 
+   Ordenar elementos:
+   -----------------
+ 
+   lista.sort()    #ordena de la 'a' a la 'z'
+   lista.sort(reverse=True)    #ordena de la 'z' a la 'a'
+   lista.reverse() #reverso actual de los elementos de la lista
+   lista.count("elemento")   #cuenta cuantas veces aparece el elemento   en la lista
+   lista.index("elemento",posición inicial,posición final)    #devuelve el posición que ocupa un elemento
+ 
+   Funciones de listas y tuplas
+   ----------------------------
+ 
+   función(argumentos)
+ 
+   nombre para lista=list(tuple) -> conversión de tupla a lista
+   nombre para tupla=list(tuple) -> conversión de lista a tupla
+   max(tupla | lista) -> devuelve el máximo valor
+   min(tupla | lista) -> devuelve el mínimo valor
+   len(tupla | lista) -> devuelve el número de elementos
+ 
+ 
+   Concatenar y copiar listas y tuplas
+   -----------------------------------
+ 
+   Concatenar  ->  lista1 = list 1 + list 2
+                   lista3 = lista1 + lista2
+                   lista  = lista  + [elemento]
+ 
+   Copiar 
+ 
+   -Por referencia  -> se copia en los elementos en las dos listas
+ 
+       lista = lista1
+       #ejemplo
+       lista1=[1,2,3,4]
+ 
+       lista = lista1[:]
+       print(lista1,lista2)
+       lista2.remove(1)
+       print(lista1,lista2)
+ 
+       Trabajando con LISTAS
+       _____________________
+       [1, 2, 3, 4] [1, 2, 3, 4]
+       [2, 3, 4] [2, 3, 4]
+ 
+   -Por valor -> se copia elementos en las dos listas pero si se modifica una no se modifican ambas
+ 
+       lista = lista1[:]
+ 
+       #ejemplo
+       lista1=[1,2,3,4]
+ 
+       lista = lista1[:]
+       print(lista1,lista2)
+       lista2.remove(1)
+       print(lista1,lista2)
+ 
+       Trabajando con LISTAS
+       _____________________
+       [1, 2, 3, 4] [1, 2, 3, 4]
+       [1, 2, 3, 4] [2, 3, 4]
+ 
+DICCIONARIOS
+___________
+ 
+   diccionario = {'clave1':valor1,'clave2':valor2,...}
+   diccionario[clave 1]
+ 
+   Métodos de diccionarios
+   -----------------------
+ 
+   diccionario.items()     -> devuelve items
+ 
+       for clave,valor in capitales.items():
+       print ("La capital de",clave,"es",valor)
+ 
+       La capital de España es Madrid
+       La capital de Italia es Roma
+       La capital de Francia es París
+ 
+   diccionario.keys()      -> devuelve las claves
+ 
+       países = capitales.keys()
+       print(países)
+       dict_keys(['España', 'Italia', 'Francia', 'Polonia', 'Australia', 'Egipto', 'Lituania', 'Portugal', 'Perú', 'Venezuela'])
+ 
+   diccionario.values()    -> devuelve valores
+ 
+       capi = capitales.values()
+       print(capi)      
+       dict values(['Madrid', 'Roma', 'París', 'Varsovia', 'Viena', 'El Cairo', 'Vilna', 'Lisboa', 'Lima', 'Caracas'])
+ 
+<<<<<<< HEAD
+   diccionario.clear() ->  vacía el diccionario
+   diccionario['clave']=valor   -> 
+   diccionario.has_key(valor)  -> devuelve T or F si la clave existe en el diccionario
+  
+=======
+lista = ['hola',12,4.5,True,'caracola']
