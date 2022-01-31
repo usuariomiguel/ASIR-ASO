@@ -6,7 +6,7 @@
    --De alto nivel   --> su sintaxis se aproxima al lenguaje humano
    --Multiplataforma --> puede ser ejecutado en diferentes SO
    --Tipado dinámico --> no necesitamos indicar de qué tipo son los datos en variables
-   --Multiparadigma  --> tiene diferentes técnicas de programación
+   --Multiparadigma  --> tiene diferentes tecnicas de programacion
  
    Pep 8 --> normas que revisa que el programa esté bien estructurado
  
@@ -266,11 +266,80 @@ ___________
        capi = capitales.values()
        print(capi)      
        dict values(['Madrid', 'Roma', 'París', 'Varsovia', 'Viena', 'El Cairo', 'Vilna', 'Lisboa', 'Lima', 'Caracas'])
- 
-<<<<<<< HEAD
+
    diccionario.clear() ->  vacía el diccionario
    diccionario['clave']=valor   -> 
    diccionario.has_key(valor)  -> devuelve T or F si la clave existe en el diccionario
-  
-=======
-lista = ['hola',12,4.5,True,'caracola']
+
+Matrices
+__________
+
+    Matriz de dos dimensiones: filas y columnas
+    Matriz 2x3 --> 2 filas y 3 columnas
+    Matriz --> es una lista de listas
+    lista1 = [1,2,3]
+    lista1 = [4,5,6]
+    Matriz = [[lista1],[lista2]]
+    Matriz = [[1,2,3],[4,5,6]] --> 2x3
+
+Funciones
+__________
+
+    función range() --> suma numeros
+        range(10) --> 0-9
+        range(m,n,s)
+            m--> valor inicial
+            n--> valor final (no cuenta este numero)
+            s--> incremento
+            range(10,0,-1)
+                10,9,8,7,6,5,4,3,2,1
+            
+estructura_de_control
+__________
+
+    tabulaciones
+
+    estructura_de_control
+        sentencia
+        sentencia
+        estructura_de_control
+            sentencia
+        sentencia
+    sentencia
+
+    #-*- coding: utf-8 -*- --> para que salga la ñ y los acentos
+    
+    IF
+    --
+    if compra <= 100:
+        print("Pago en efectivo")
+    elif compra > 100 and compra < 300:
+        print("Pago con tarjeta de credito)
+    else:
+        print("Pago con tarjeta de credito)
+    print("Fuera del if")
+
+    WHILE
+    -----
+    while condicion:
+        sentencias
+    
+    mas='s'
+    suma=0
+    while mas == 's':
+        num=input("Dime un numero: ")
+        suma+=int(num)
+        mas=input("Seguir?")
+    print("La suma total es:",suma)
+
+    FOR
+    ---
+    for numero in range (100):
+        print(numero)
+    
+    colores=["rojo","verde","azul","amarillo","negro","blanco"]
+    for color in colores:
+        print(color)
+    
+    for i in range(len(colores)):
+        print (colores[i])
