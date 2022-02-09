@@ -46,60 +46,60 @@ Objeto.Atributo
 
 ## Creacion de la clase
 
-class Nombre():
-    def __init__(self, nombre, apellidos, direccion,):
-        #variables locales
-        self.nom = nombre
-        self.ape = apellido
-        self.dire = direccion
+    class Nombre():
+        def __init__(self, nombre, apellidos, direccion,):
+            #variables locales
+            self.nom = nombre
+            self.ape = apellido
+            self.dire = direccion
 
-    def mostar_datos1(self):
-        #desarrollo lo que quiro que haga el metodo
-        print("Me llamo",self.nom, self.ape)
+        def mostar_datos1(self):
+            #desarrollo lo que quiro que haga el metodo
+            print("Me llamo",self.nom, self.ape)
 
-    def metodo2(self):
-        #codigo python
-
-
-    n = input("NOMBRE:")
-    a = input("APELLIDO:")
-    d = input("direccion:")
-    humano=persona(n,a,d) #instanciar el objeto
-    print(humano.nom)
-    humano.mostrar_datos()
+        def metodo2(self):
+            #codigo python
 
 
+        n = input("NOMBRE:")
+        a = input("APELLIDO:")
+        d = input("direccion:")
+        humano=persona(n,a,d) #instanciar el objeto
+        print(humano.nom)
+        humano.mostrar_datos()
 
-class humano():
-    def __init__(self,nombre,edad):
-        self.nombre = nombre
-        self.edad = edad
-    def mostrar_nombre(self):
-        print(self.nombre.upper())
-    def mayor_edad(self):
-        if self.edad >= 18:
-            print ("Mayor de edad")
-        else:
-            print ("menor de edad")
+
+
+    class humano():
+        def __init__(self,nombre,edad):
+            self.nombre = nombre
+            self.edad = edad
+        def mostrar_nombre(self):
+            print(self.nombre.upper())
+        def mayor_edad(self):
+            if self.edad >= 18:
+                print ("Mayor de edad")
+            else:
+                print ("menor de edad")
+            
+    class alumno(humano):
+        def __init__(self,nota,nombre,edad):
+            humano.__init__(self,nombre,edad)
+            self.nota = nota
         
-class alumno(humano):
-    def __init__(self,nota,nombre,edad):
-        humano.__init__(self,nombre,edad)
-        self.nota = nota
-    
-    def obtener_nota(self):
-        if  self.nota >= 5:
-            print ("aprobado")
-        elif self.nota < 5:
-            print ("suspenso")
-        elif self.nota > 7:
-            print ("notable")
-        elif self.nota > 9:
-            print ("sobresaliente")
-        else:
-            print("nota invalida")
-        
-alum=alumno(9,"Paco",19)
-alum.mostrar_nombre()
-alum.mayor_edad()
-alum.obtener_nota()
+        def obtener_nota(self):
+            if  self.nota >= 5:
+                print ("aprobado")
+            elif self.nota < 5:
+                print ("suspenso")
+            elif self.nota > 7:
+                print ("notable")
+            elif self.nota > 9:
+                print ("sobresaliente")
+            else:
+                print("nota invalida")
+            
+    alum=alumno(9,"Paco",19)
+    alum.mostrar_nombre()
+    alum.mayor_edad()
+    alum.obtener_nota()
