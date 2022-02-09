@@ -4,13 +4,13 @@
 POO es otro paradigma de programacion. Todo es un objeto (real, imaginario, persona, animal, cosa...)
 
 todos los objetos tienen:
-    -Caracteristicas: por eemplo un monitor
-        - color
-        - tamaño
-        - marca
-        - numero de botones 
-        - ...
-         A estas caracteristicas se las denominan ATRIBUTOS
+Caracteristicas: por ejemplo un monitor
+    - color
+    - tamaño
+    - marca
+    - numero de botones 
+     - ...
+    A estas caracteristicas se las denominan ATRIBUTOS
     
     -Reaccion del objeto frente a eventos:
     Los objetos reaccionan mediante la definicion de funciones, en las cuales determinamos el comportamiento del objeto.
@@ -58,9 +58,9 @@ class Nombre():
         #codigo python
 
 
-n = input("NOMBRE:")
-a = input("APELLIDO:")
-d = input("direccion:")
-humano=persona(n,a,d) #instanciar el objeto
-print(humano.nom)
-humano.mostrar_datos()
+    n = input("NOMBRE:")
+    a = input("APELLIDO:")
+    d = input("direccion:")
+    humano=persona(n,a,d) #instanciar el objeto
+    print(humano.nom)
+    humano.mostrar_datos()
