@@ -5,19 +5,20 @@ POO es otro paradigma de programacion. Todo es un objeto (real, imaginario, pers
 
 todos los objetos tienen:
 
-Caracteristicas: por ejemplo un monitor
+    Caracteristicas: por ejemplo un monitor
 
-    - color
-    - tamaño
-    - marca
-    - numero de botones 
-     - ...
-     
+        - color
+        - tamaño
+        - marca
+        - numero de botones 
+        - ...
+
     A estas caracteristicas se las denominan ATRIBUTOS
     
     -Reaccion del objeto frente a eventos:
-    Los objetos reaccionan mediante la definicion de funciones, en las cuales determinamos el comportamiento del objeto.
-    A estas funciones de las denomina METODOS
+    Los objetos reaccionan mediante la definicion de funciones, 
+    en las cuales determinamos el comportamiento del objeto.
+    "A estas funciones de las denomina METODOS"
 
 ## Clases
 
