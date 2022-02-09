@@ -2,11 +2,11 @@
    Lenguaje de programación interpretado, de alto nivel,
    multiplataforma, de tipado dinámico y multiparadigma
  
-   --Interpretado    --> no necesita un programa compilador
-   --De alto nivel   --> su sintaxis se aproxima al lenguaje humano
-   --Multiplataforma --> puede ser ejecutado en diferentes SO
-   --Tipado dinámico --> no necesitamos indicar de qué tipo son los datos en variables
-   --Multiparadigma  --> tiene diferentes tecnicas de programacion
+   -Interpretado    --> no necesita un programa compilador
+   -De alto nivel   --> su sintaxis se aproxima al lenguaje humano
+   -Multiplataforma --> puede ser ejecutado en diferentes SO
+   -Tipado dinámico --> no necesitamos indicar de qué tipo son los datos en variables
+   -Multiparadigma  --> tiene diferentes tecnicas de programacion
  
    Pep 8 --> normas que revisa que el programa esté bien estructurado
  
