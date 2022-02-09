@@ -12,60 +12,56 @@
  
 ## Variables
 
- 
    nombre = variable
  
-   Pep 8: antes y después del signo igual DEBE haber uno (y solo uno) espacio en blanco
+   - Pep 8: antes y después del signo igual DEBE haber uno (y solo uno) espacio en blanco
        nombre = 'pepe'
  
-   Pep 8: el nombre de las constantes DEBE ir en mayúscula
+   - Pep 8: el nombre de las constantes DEBE ir en mayúscula
        PI = 3.1416
  
-       Tipos de datos:
-               Cadenas (string)
-                   nombre = 'pepe'
-                   multi = '''esto es una Cadena
+   ### Tipos de datos:
+         - Cadenas (string)
+            - nombre = 'pepe'
+            - multi = '''esto es una Cadena
                                multilinea'''
-               Enteros
-                   edad = 18
-               Decimales
-                   precio = 2.97
-               Booleanos
-                   ok = True
-                   ok = False
+            - Enteros
+               - edad = 18
+               - Decimales
+                   - precio = 2.97
+            - Booleanos
+               - ok = True
+               - ok = False
  
-       Listas,Tuplas,Diccionarios
+         - Listas,Tuplas,Diccionarios
  
 ## Operadores
 
  
-   Aritméticos: + - * /
-               ** Potencia
-               // Cociente de la división entera
-               % Resto de la división entera
+   - Aritméticos: + - * /
+      ** Potencia
+      // Cociente de la división entera
+      % Resto de la división entera
  
-               Notación compacta
-                   a = a + b --> a +=b
+   Notación compacta
+      a = a + b --> a +=b
  
-       Relacionales: == != < > <= >=
+   Relacionales: == != < > <= >=
  
-   Lógicos:    and ->  True cuando las condiciones son true
-                       Falsa cuando hay una condición falsa
-               or  ->  Falsa solo cuando las dos son falsas
-                       True cuando no hay dos condiciones falsas
-               xor ->  Falsa cuando las dos condiciones son iguales
-                       True cuando una de las es true y otra falsa
+   Lógicos:    
+   - and ->  True cuando las condiciones son true Falsa cuando hay una condición falsa
+   - or  ->  Falsa solo cuando las dos son falsas True cuando no hay dos condiciones falsas
+   - xor ->  Falsa cuando las dos condiciones son iguales True cuando una de las es true y otra falsa
  
  ## Comentarios
 
- 
-   Pep 8: comentarios en la misma línea que el código, DEBE separarse con DOS espacios en blanco.
-   Pep 8: Despues de el símbolo # DEBE ir un solo espacio en blanco
+   - Pep 8: comentarios en la misma línea que el código, DEBE separarse con DOS espacios en blanco.
+   - Pep 8: Despues de el símbolo # DEBE ir un solo espacio en blanco
  
    ### Comentarios de una línea
  
-   """Comentarios
-   multilínea"""
+      """Comentarios
+      multilínea"""
  
 ## Función print ()
 
@@ -73,30 +69,32 @@
  
        print("mensaje",variable,sep="-",end="--")
  
-   sep --> indica carácter por el cual se van a separar
-   end --> cómo va a terminar la expr que estoy explicando
+   - sep --> indica carácter por el cual se van a separar
+   - end --> cómo va a terminar la expr que estoy explicando
  
-   nombre = pepe
-   print("hola",nombre,sep="$",end="fin")
-   hola$pepe fin
+         nombre = pepe
+         print("hola",nombre,sep="$",end="fin")
+         hola$pepe fin
  
 ## Función input()
 
    Nos permite realizar entradas de datos por teclado
  
-   python2 --> input()     - números
-               raw_input() - cadenas
+   python2
+      - input()     - números
+      - raw_input() - cadenas
  
    num = input("Dime un número")
  
-   python3 --> input()     - cadenas
+   python3 --> 
+      - input() - cadenas
  
    Para hacer transformaciones de tipo, usaremos las funciones de casting:
    int(), float(), str()
+
+   ### Ejemplo donde quiero introducir números ¡en variables con input--
  
-   --Ejemplo donde quiero introducir números ¡en variables con input--
- 
-       --Forma Correcto--
+   #### Forma Correcto
  
        num = int(input("Dime un número: "))
        >>> numero2 = int(input("DIme numero: "))
@@ -106,7 +104,7 @@
        >>> numero2 * numero3
        2520
  
-       --Forma incorrecto--
+   #### Forma incorrecto--
  
        >>> número 1 = input("dime numero")
        dime numero 3
@@ -120,19 +118,18 @@
        TypeError: can't multiply sequence by non-int of type 'str'
  
 ## TUPLAS
-
  
-   Pep8: tiene que ir entre paréntesis
+   - Pep8: tiene que ir entre paréntesis
  
-   Son variables que permiten almacenar varios datos inmutables de     diferentes tipos.
+   Son variables que permiten almacenar varios datos inmutables de diferentes tipos.
    Una vez que se ha creado no se puede modificar o borrar, mientras está en ejecución
  
-   tupla = ('hola',12,3.4,True,'Caracola')
+      tupla = ('hola',12,3.4,True,'Caracola')
  
 ## LISTAS
 
  
-   Pep 8: tiene que ir entre corchetes
+   - Pep 8: tiene que ir entre corchetes
  
    Permite almacenar varios datos de diferentes tipos.
  
@@ -157,24 +154,23 @@
    ### Eliminar elementos:
    
  
-   lista.pop(posición)
-   lista.remove('elemento')
- 
-   lista = ['hola',12,3.4,True,'Caracola']
- 
-       lista.pop(0)#elimina elemento en la posición 0
-       print(lista)
-       lista.remove('caracola')#eliminar elemento caracola
-       print(lista)
-       print.pop()#elimina elemento en la última posición por defecto
+      lista.pop(posición)
+      lista.remove('elemento')
+
+      lista = ['hola',12,3.4,True,'Caracola'
+      lista.pop(0)#elimina elemento en la posición 0
+      print(lista)
+      lista.remove('caracola')#eliminar elemento caracola
+      print(lista)
+      print.pop()#elimina elemento en la última posición por defecto
  
    ### Ordenar elementos:
  
-   lista.sort()    #ordena de la 'a' a la 'z'
-   lista.sort(reverse=True)    #ordena de la 'z' a la 'a'
-   lista.reverse() #reverso actual de los elementos de la lista
-   lista.count("elemento")   #cuenta cuantas veces aparece el elemento   en la lista
-   lista.index("elemento",posición inicial,posición final)    #devuelve el posición que ocupa un elemento
+      - lista.sort()    #ordena de la 'a' a la 'z'
+      - lista.sort(reverse=True)    #ordena de la 'z' a la 'a'
+      - lista.reverse() #reverso actual de los elementos de la lista
+      - lista.count("elemento")   #cuenta cuantas veces aparece el elemento   en la lista
+      - lista.index("elemento",posición inicial,posición final)    #devuelve el posición que ocupa un elemento
  
    ### Funciones de listas y tuplas
  
