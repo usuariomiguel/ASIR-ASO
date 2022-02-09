@@ -46,6 +46,8 @@ Objeto.Atributo
 
 ## Creacion de la clase
 
+### Ejemplo :
+
     class Nombre():
         def __init__(self, nombre, apellidos, direccion,):
             #variables locales
@@ -69,7 +71,7 @@ Objeto.Atributo
         humano.mostrar_datos()
 
 
-
+### Ejemplo 2:
     class humano():
         def __init__(self,nombre,edad):
             self.nombre = nombre
