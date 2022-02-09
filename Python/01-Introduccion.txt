@@ -266,11 +266,149 @@ ___________
        capi = capitales.values()
        print(capi)      
        dict values(['Madrid', 'Roma', 'París', 'Varsovia', 'Viena', 'El Cairo', 'Vilna', 'Lisboa', 'Lima', 'Caracas'])
- 
-<<<<<<< HEAD
+
    diccionario.clear() ->  vacía el diccionario
    diccionario['clave']=valor   -> 
    diccionario.has_key(valor)  -> devuelve T or F si la clave existe en el diccionario
-  
-=======
-lista = ['hola',12,4.5,True,'caracola']
+
+Matrices
+__________
+
+    Matriz de dos dimensiones: filas y columnas
+    Matriz 2x3 --> 2 filas y 3 columnas
+    Matriz --> es una lista de listas
+    lista1 = [1,2,3]
+    lista1 = [4,5,6]
+    Matriz = [[lista1],[lista2]]
+    Matriz = [[1,2,3],[4,5,6]] --> 2x3
+
+Funciones
+__________
+
+    función range() --> suma numeros
+        range(10) --> 0-9
+        range(m,n,s)
+            m--> valor inicial
+            n--> valor final (no cuenta este numero)
+            s--> incremento
+            range(10,0,-1)
+                10,9,8,7,6,5,4,3,2,1
+            
+estructura_de_control
+__________
+
+    tabulaciones
+
+    estructura_de_control
+        sentencia
+        sentencia
+        estructura_de_control
+            sentencia
+        sentencia
+    sentencia
+
+    #-*- coding: utf-8 -*- --> para que salga la ñ y los acentos
+    
+    IF
+    --
+    if compra <= 100:
+        print("Pago en efectivo")
+    elif compra > 100 and compra < 300:
+        print("Pago con tarjeta de credito)
+    else:
+        print("Pago con tarjeta de credito)
+    print("Fuera del if")
+
+    WHILE
+    -----
+    while condicion:
+        sentencias
+    
+    mas='s'
+    suma=0
+    while mas == 's':
+        num=input("Dime un numero: ")
+        suma+=int(num)
+        mas=input("Seguir?")
+    print("La suma total es:",suma)
+
+    FOR
+    ---
+    for numero in range (100):
+        print(numero)
+    
+    colores=["rojo","verde","azul","amarillo","negro","blanco"]
+    for color in colores:
+        print(color)
+    
+    for i in range(len(colores)):
+        print (colores[i])
+    
+Funciones
+_________
+
+    Una función te permite definir un bloque de código reutilizable que se puede ejecutar muchas veces
+
+    def nombre_funcion();
+        codigo_funcion
+    ##para llamar funcion
+    nombre_funcion
+    ##para llamar funcion y pasar parametros
+    nombre_funcion()
+    ##ejemplo
+    def saludo(nombre,edad): <--> def saludo(nombre,saludo="que tal?"): 
+    
+        if edad > 18:
+            print("hola",nombre,"eres mayor  de edad")
+        else:
+            print("hola",nombre,"eres menor de edad")
+    
+    saludo("lola",18) <-->  saludo(edad=18,nombre="lola")
+
+Parametro arbitrarios
+_____________________
+
+    Son un numero desconocido de parametros
+    Llegan a la funcion en forma de dupla
+    Para definirlos se debe anteponer a su nombre un aseterisco(*)
+
+        def carrito(nombre,ape,*productos):
+            print("carrito de",nombre)
+            for p in productos:
+                print(p)
+
+        nombre='Pepe'
+        apellido='Garcia'
+        prod1='tomates'
+        prod2='lechuga'
+        prod3='pan'
+        prod4='leche'
+        carrito(nombre,apellido,prod1,prod2,prod3,prod4)
+
+    En los paramtros arbitrarios, podemos pasar pares clave=valor. 
+    En este caso se debe anteponer al nombre de los parametros dos asteriscos (**)
+    
+        #!/usr/bin/env python3
+        #-*- coding: utf-8 -*-
+        #*datos_clientes num idefinido de parametros
+        #**productos que almacena clave y valor
+        def carrito(nombre,ape,*datos_clientes,**productos):
+            print("carrito de",nombre)
+            for p in productos:
+                print(p)
+            for clave in productos:
+                    print (productos[clave])
+                    #calculamos el precio de la compra
+                return total
+
+        nombre='Pepe'
+        apellido='Garcia'
+        direccion='street'
+        telf='91234533'
+        prod1='tomates'
+        prod2='lechuga'
+        prod3='pan'
+        prod4='leche'
+
+        carrito(nombre,apellido,direccion,telf,prod1=2,prod2=3,prod3=4,prod4=5)
+        carrito(nombre,apellido,telf,prod1=2,prod2=3,prod3=4,prod4=5)
