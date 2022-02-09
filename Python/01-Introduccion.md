@@ -62,7 +62,7 @@
    Pep 8: comentarios en la misma línea que el código, DEBE separarse con DOS espacios en blanco.
    Pep 8: Despues de el símbolo # DEBE ir un solo espacio en blanco
  
-   # Comentarios de una línea
+   ### Comentarios de una línea
  
    """Comentarios
    multilínea"""
