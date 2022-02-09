@@ -1,4 +1,4 @@
------------------------python---------------------------
+#PYTHON
    Lenguaje de programación interpretado, de alto nivel,
    multiplataforma, de tipado dinámico y multiparadigma
  
@@ -10,8 +10,8 @@
  
    Pep 8 --> normas que revisa que el programa esté bien estructurado
  
-Variables
-__________
+##Variables
+
  
    nombre = variable
  
@@ -36,8 +36,8 @@ __________
  
        Listas,Tuplas,Diccionarios
  
-Operadores
-__________
+##Operadores
+
  
    Aritméticos: + - * /
                ** Potencia
@@ -56,9 +56,8 @@ __________
                xor ->  Falsa cuando las dos condiciones son iguales
                        True cuando una de las es true y otra falsa
  
- 
-Comentarios
-__________
+ ##Comentarios
+
  
    Pep 8: comentarios en la misma línea que el código, DEBE separarse con DOS espacios en blanco.
    Pep 8: Despues de el símbolo # DEBE ir un solo espacio en blanco
@@ -68,9 +67,8 @@ __________
    """Comentarios
    multilínea"""
  
-Función print ()
-________________
- 
+##Función print ()
+
    Saca VARIABLES por pantalla no muestra MENSAJES
  
        print("mensaje",variable,sep="-",end="--")
@@ -82,9 +80,8 @@ ________________
    print("hola",nombre,sep="$",end="fin")
    hola$pepe fin
  
-Función input()
-_______________
- 
+##Función input()
+
    Nos permite realizar entradas de datos por teclado
  
    python2 --> input()     - números
@@ -122,8 +119,8 @@ _______________
        File "<stdin>", line 1, in <module>
        TypeError: can't multiply sequence by non-int of type 'str'
  
-TUPLAS
-______
+##TUPLAS
+
  
    Pep8: tiene que ir entre paréntesis
  
@@ -132,8 +129,8 @@ ______
  
    tupla = ('hola',12,3.4,True,'Caracola')
  
-LISTAS
-______
+##LISTAS
+
  
    Pep 8: tiene que ir entre corchetes
  
@@ -141,15 +138,14 @@ ______
  
    lista = ['hola',12,4.5,True,'caracola']
  
-   Añadir elementos:
-   ----------------
+   ###Añadir elementos:
  
    lista.append ("nuevo elemento")
    lista.insert (posición,"nuevo elemento")
  
    lista = ['hola',12,3.4,True,'Caracola']
  
-       #agregar
+   ###agregar
  
        lista[0] = "hola pepe"
        print (lista[2])
@@ -158,8 +154,8 @@ ______
        lista.insert(1,"cadena")
        print(lista)
  
-   Eliminar elementos:
-   -------------------
+   ###Eliminar elementos:
+   
  
    lista.pop(posición)
    lista.remove('elemento')
@@ -174,8 +170,7 @@ ______
        print(lista)
        print.pop()#elimina elemento en la última posición por defecto
  
-   Ordenar elementos:
-   -----------------
+   ###Ordenar elementos:
  
    lista.sort()    #ordena de la 'a' a la 'z'
    lista.sort(reverse=True)    #ordena de la 'z' a la 'a'
@@ -183,8 +178,7 @@ ______
    lista.count("elemento")   #cuenta cuantas veces aparece el elemento   en la lista
    lista.index("elemento",posición inicial,posición final)    #devuelve el posición que ocupa un elemento
  
-   Funciones de listas y tuplas
-   ----------------------------
+   ###Funciones de listas y tuplas
  
    función(argumentos)
  
@@ -195,8 +189,7 @@ ______
    len(tupla | lista) -> devuelve el número de elementos
  
  
-   Concatenar y copiar listas y tuplas
-   -----------------------------------
+   ###Concatenar y copiar listas y tuplas   
  
    Concatenar  ->  lista1 = list 1 + list 2
                    lista3 = lista1 + lista2
@@ -237,14 +230,13 @@ ______
        [1, 2, 3, 4] [1, 2, 3, 4]
        [1, 2, 3, 4] [2, 3, 4]
  
-DICCIONARIOS
-___________
+##DICCIONARIOS
+
  
    diccionario = {'clave1':valor1,'clave2':valor2,...}
    diccionario[clave 1]
  
-   Métodos de diccionarios
-   -----------------------
+   ###Métodos de diccionarios
  
    diccionario.items()     -> devuelve items
  
@@ -271,8 +263,7 @@ ___________
    diccionario['clave']=valor   -> 
    diccionario.has_key(valor)  -> devuelve T or F si la clave existe en el diccionario
 
-Matrices
-__________
+##Matrices
 
     Matriz de dos dimensiones: filas y columnas
     Matriz 2x3 --> 2 filas y 3 columnas
@@ -282,8 +273,7 @@ __________
     Matriz = [[lista1],[lista2]]
     Matriz = [[1,2,3],[4,5,6]] --> 2x3
 
-Funciones
-__________
+##Funciones
 
     función range() --> suma numeros
         range(10) --> 0-9
@@ -294,8 +284,7 @@ __________
             range(10,0,-1)
                 10,9,8,7,6,5,4,3,2,1
             
-estructura_de_control
-__________
+##estructura_de_control
 
     tabulaciones
 
@@ -309,8 +298,8 @@ __________
 
     #-*- coding: utf-8 -*- --> para que salga la ñ y los acentos
     
-    IF
-    --
+    ###IF
+    
     if compra <= 100:
         print("Pago en efectivo")
     elif compra > 100 and compra < 300:
@@ -319,8 +308,8 @@ __________
         print("Pago con tarjeta de credito)
     print("Fuera del if")
 
-    WHILE
-    -----
+    ###WHILE
+    
     while condicion:
         sentencias
     
@@ -332,8 +321,8 @@ __________
         mas=input("Seguir?")
     print("La suma total es:",suma)
 
-    FOR
-    ---
+    ###FOR
+    
     for numero in range (100):
         print(numero)
     
@@ -344,8 +333,7 @@ __________
     for i in range(len(colores)):
         print (colores[i])
     
-Funciones
-_________
+##Funciones
 
     Una función te permite definir un bloque de código reutilizable que se puede ejecutar muchas veces
 
@@ -365,8 +353,8 @@ _________
     
     saludo("lola",18) <-->  saludo(edad=18,nombre="lola")
 
-Parametro arbitrarios
-_____________________
+##Parametro arbitrarios
+
 
     Son un numero desconocido de parametros
     Llegan a la funcion en forma de dupla
