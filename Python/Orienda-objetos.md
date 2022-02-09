@@ -1,5 +1,5 @@
 # programacion orientada a objetos
-=================================
+
 
 POO es otro paradigma de programacion. Todo es un objeto (real, imaginario, persona, animal, cosa...)
 
@@ -17,7 +17,7 @@ todos los objetos tienen:
     A estas funciones de las denomina METODOS
 
 ## Clases
-------
+
 Son modelos sobre los cuales se construiran nuestros objetos
 
 La creacion del objeto se denomina INSTANCIAR el objeto
@@ -34,14 +34,14 @@ Una clase puede HEREDAR atributos y metodos de otra clase
     Es la capacidad de que un mismo metodo haga funciones distintas.
 
 ## Acceso a atributos y metodos
-------------------------------
+
 
 Objeto.Metodo()
 Objeto.Atributo
 
 
 ## Creacion de la clase
------------------------
+
 
 class Nombre():
     def __init__(self, nombre, apellidos, direccion,):
