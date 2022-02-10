@@ -46,7 +46,7 @@ Objeto.Atributo
 
 ### Ejemplo :
 
-    class Nombre():
+    class persona():
         def __init__(self, nombre, apellidos, direccion,):
             #variables locales
             self.nom = nombre

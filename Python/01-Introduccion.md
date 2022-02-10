@@ -1,105 +1,100 @@
------------------------python---------------------------
+# PYTHON
    Lenguaje de programación interpretado, de alto nivel,
    multiplataforma, de tipado dinámico y multiparadigma
  
-   --Interpretado    --> no necesita un programa compilador
-   --De alto nivel   --> su sintaxis se aproxima al lenguaje humano
-   --Multiplataforma --> puede ser ejecutado en diferentes SO
-   --Tipado dinámico --> no necesitamos indicar de qué tipo son los datos en variables
-   --Multiparadigma  --> tiene diferentes tecnicas de programacion
+   - Interpretado    --> no necesita un programa compilador
+   - De alto nivel   --> su sintaxis se aproxima al lenguaje humano
+   - Multiplataforma --> puede ser ejecutado en diferentes SO
+   - Tipado dinámico --> no necesitamos indicar de qué tipo son los datos en variables
+   - Multiparadigma  --> tiene diferentes tecnicas de programacion
  
    Pep 8 --> normas que revisa que el programa esté bien estructurado
  
-Variables
-__________
- 
+## Variables
+
    nombre = variable
  
-   Pep 8: antes y después del signo igual DEBE haber uno (y solo uno) espacio en blanco
+   - Pep 8: antes y después del signo igual DEBE haber uno (y solo uno) espacio en blanco
        nombre = 'pepe'
  
-   Pep 8: el nombre de las constantes DEBE ir en mayúscula
+   - Pep 8: el nombre de las constantes DEBE ir en mayúscula
        PI = 3.1416
  
-       Tipos de datos:
-               Cadenas (string)
-                   nombre = 'pepe'
-                   multi = '''esto es una Cadena
+   ### Tipos de datos:
+         - Cadenas (string)
+            - nombre = 'pepe'
+            - multi = '''esto es una Cadena
                                multilinea'''
-               Enteros
-                   edad = 18
-               Decimales
-                   precio = 2.97
-               Booleanos
-                   ok = True
-                   ok = False
+            - Enteros
+               - edad = 18
+               - Decimales
+                   - precio = 2.97
+            - Booleanos
+               - ok = True
+               - ok = False
  
-       Listas,Tuplas,Diccionarios
+         - Listas,Tuplas,Diccionarios
  
-Operadores
-__________
+## Operadores
+
  
-   Aritméticos: + - * /
-               ** Potencia
-               // Cociente de la división entera
-               % Resto de la división entera
+   - Aritméticos: + - * /
+      ** Potencia
+      // Cociente de la división entera
+      % Resto de la división entera
  
-               Notación compacta
-                   a = a + b --> a +=b
+   Notación compacta
+      a = a + b --> a +=b
  
-       Relacionales: == != < > <= >=
+   Relacionales: == != < > <= >=
  
-   Lógicos:    and ->  True cuando las condiciones son true
-                       Falsa cuando hay una condición falsa
-               or  ->  Falsa solo cuando las dos son falsas
-                       True cuando no hay dos condiciones falsas
-               xor ->  Falsa cuando las dos condiciones son iguales
-                       True cuando una de las es true y otra falsa
+   Lógicos:    
+   - and ->  True cuando las condiciones son true Falsa cuando hay una condición falsa
+   - or  ->  Falsa solo cuando las dos son falsas True cuando no hay dos condiciones falsas
+   - xor ->  Falsa cuando las dos condiciones son iguales True cuando una de las es true y otra falsa
  
+ ## Comentarios
+
+   - Pep 8: comentarios en la misma línea que el código, DEBE separarse con DOS espacios en blanco.
+   - Pep 8: Despues de el símbolo # DEBE ir un solo espacio en blanco
  
-Comentarios
-__________
+   ### Comentarios de una línea
  
-   Pep 8: comentarios en la misma línea que el código, DEBE separarse con DOS espacios en blanco.
-   Pep 8: Despues de el símbolo # DEBE ir un solo espacio en blanco
+      """Comentarios
+      multilínea"""
  
-   # Comentarios de una línea
- 
-   """Comentarios
-   multilínea"""
- 
-Función print ()
-________________
- 
+## Función print ()
+
    Saca VARIABLES por pantalla no muestra MENSAJES
  
        print("mensaje",variable,sep="-",end="--")
  
-   sep --> indica carácter por el cual se van a separar
-   end --> cómo va a terminar la expr que estoy explicando
+   - sep --> indica carácter por el cual se van a separar
+   - end --> cómo va a terminar la expr que estoy explicando
  
-   nombre = pepe
-   print("hola",nombre,sep="$",end="fin")
-   hola$pepe fin
+         nombre = pepe
+         print("hola",nombre,sep="$",end="fin")
+         hola$pepe fin
  
-Función input()
-_______________
- 
+## Función input()
+
    Nos permite realizar entradas de datos por teclado
  
-   python2 --> input()     - números
-               raw_input() - cadenas
+   python2
+      - input()     - números
+      - raw_input() - cadenas
  
    num = input("Dime un número")
  
-   python3 --> input()     - cadenas
+   python3 --> 
+      - input() - cadenas
  
    Para hacer transformaciones de tipo, usaremos las funciones de casting:
    int(), float(), str()
+
+   ### Ejemplo donde quiero introducir números ¡en variables con input--
  
-   --Ejemplo donde quiero introducir números ¡en variables con input--
- 
-       --Forma Correcto--
+   #### Forma Correcto
  
        num = int(input("Dime un número: "))
        >>> numero2 = int(input("DIme numero: "))
@@ -109,7 +104,7 @@ _______________
        >>> numero2 * numero3
        2520
  
-       --Forma incorrecto--
+   #### Forma incorrecto--
  
        >>> número 1 = input("dime numero")
        dime numero 3
@@ -122,34 +117,32 @@ _______________
        File "<stdin>", line 1, in <module>
        TypeError: can't multiply sequence by non-int of type 'str'
  
-TUPLAS
-______
+## TUPLAS
  
-   Pep8: tiene que ir entre paréntesis
+   - Pep8: tiene que ir entre paréntesis
  
-   Son variables que permiten almacenar varios datos inmutables de     diferentes tipos.
+   Son variables que permiten almacenar varios datos inmutables de diferentes tipos.
    Una vez que se ha creado no se puede modificar o borrar, mientras está en ejecución
  
-   tupla = ('hola',12,3.4,True,'Caracola')
+      tupla = ('hola',12,3.4,True,'Caracola')
  
-LISTAS
-______
+## LISTAS
+
  
-   Pep 8: tiene que ir entre corchetes
+   - Pep 8: tiene que ir entre corchetes
  
    Permite almacenar varios datos de diferentes tipos.
  
    lista = ['hola',12,4.5,True,'caracola']
  
-   Añadir elementos:
-   ----------------
+   ### Añadir elementos:
  
    lista.append ("nuevo elemento")
    lista.insert (posición,"nuevo elemento")
  
    lista = ['hola',12,3.4,True,'Caracola']
  
-       #agregar
+   ### agregar
  
        lista[0] = "hola pepe"
        print (lista[2])
@@ -158,33 +151,28 @@ ______
        lista.insert(1,"cadena")
        print(lista)
  
-   Eliminar elementos:
-   -------------------
+   ### Eliminar elementos:
+   
  
-   lista.pop(posición)
-   lista.remove('elemento')
+      lista.pop(posición)
+      lista.remove('elemento')
+
+      lista = ['hola',12,3.4,True,'Caracola'
+      lista.pop(0)#elimina elemento en la posición 0
+      print(lista)
+      lista.remove('caracola')#eliminar elemento caracola
+      print(lista)
+      print.pop()#elimina elemento en la última posición por defecto
  
-   lista = ['hola',12,3.4,True,'Caracola']
+   ### Ordenar elementos:
  
-       #eliminar
+      - lista.sort()    #ordena de la 'a' a la 'z'
+      - lista.sort(reverse=True)    #ordena de la 'z' a la 'a'
+      - lista.reverse() #reverso actual de los elementos de la lista
+      - lista.count("elemento")   #cuenta cuantas veces aparece el elemento   en la lista
+      - lista.index("elemento",posición inicial,posición final)    #devuelve el posición que ocupa un elemento
  
-       lista.pop(0)#elimina elemento en la posición 0
-       print(lista)
-       lista.remove('caracola')#eliminar elemento caracola
-       print(lista)
-       print.pop()#elimina elemento en la última posición por defecto
- 
-   Ordenar elementos:
-   -----------------
- 
-   lista.sort()    #ordena de la 'a' a la 'z'
-   lista.sort(reverse=True)    #ordena de la 'z' a la 'a'
-   lista.reverse() #reverso actual de los elementos de la lista
-   lista.count("elemento")   #cuenta cuantas veces aparece el elemento   en la lista
-   lista.index("elemento",posición inicial,posición final)    #devuelve el posición que ocupa un elemento
- 
-   Funciones de listas y tuplas
-   ----------------------------
+   ### Funciones de listas y tuplas
  
    función(argumentos)
  
@@ -195,8 +183,7 @@ ______
    len(tupla | lista) -> devuelve el número de elementos
  
  
-   Concatenar y copiar listas y tuplas
-   -----------------------------------
+   ### Concatenar y copiar listas y tuplas   
  
    Concatenar  ->  lista1 = list 1 + list 2
                    lista3 = lista1 + lista2
@@ -237,14 +224,13 @@ ______
        [1, 2, 3, 4] [1, 2, 3, 4]
        [1, 2, 3, 4] [2, 3, 4]
  
-DICCIONARIOS
-___________
+## DICCIONARIOS
+
  
    diccionario = {'clave1':valor1,'clave2':valor2,...}
    diccionario[clave 1]
  
-   Métodos de diccionarios
-   -----------------------
+   ### Métodos de diccionarios
  
    diccionario.items()     -> devuelve items
  
@@ -271,8 +257,7 @@ ___________
    diccionario['clave']=valor   -> 
    diccionario.has_key(valor)  -> devuelve T or F si la clave existe en el diccionario
 
-Matrices
-__________
+## Matrices
 
     Matriz de dos dimensiones: filas y columnas
     Matriz 2x3 --> 2 filas y 3 columnas
@@ -282,8 +267,7 @@ __________
     Matriz = [[lista1],[lista2]]
     Matriz = [[1,2,3],[4,5,6]] --> 2x3
 
-Funciones
-__________
+## Funciones
 
     función range() --> suma numeros
         range(10) --> 0-9
@@ -294,8 +278,7 @@ __________
             range(10,0,-1)
                 10,9,8,7,6,5,4,3,2,1
             
-estructura_de_control
-__________
+## estructura_de_control
 
     tabulaciones
 
@@ -307,10 +290,10 @@ __________
         sentencia
     sentencia
 
-    #-*- coding: utf-8 -*- --> para que salga la ñ y los acentos
+    -*- coding: utf-8 -*- --> para que salga la ñ y los acentos
     
-    IF
-    --
+    ### IF
+    
     if compra <= 100:
         print("Pago en efectivo")
     elif compra > 100 and compra < 300:
@@ -319,8 +302,8 @@ __________
         print("Pago con tarjeta de credito)
     print("Fuera del if")
 
-    WHILE
-    -----
+    ### WHILE
+    
     while condicion:
         sentencias
     
@@ -332,8 +315,8 @@ __________
         mas=input("Seguir?")
     print("La suma total es:",suma)
 
-    FOR
-    ---
+    ### FOR
+    
     for numero in range (100):
         print(numero)
     
@@ -344,8 +327,7 @@ __________
     for i in range(len(colores)):
         print (colores[i])
     
-Funciones
-_________
+## Funciones
 
     Una función te permite definir un bloque de código reutilizable que se puede ejecutar muchas veces
 
@@ -365,8 +347,8 @@ _________
     
     saludo("lola",18) <-->  saludo(edad=18,nombre="lola")
 
-Parametro arbitrarios
-_____________________
+## Parametro arbitrarios
+
 
     Son un numero desconocido de parametros
     Llegan a la funcion en forma de dupla
