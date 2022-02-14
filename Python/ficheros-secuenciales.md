@@ -1,14 +1,16 @@
 # Fichero Secuenciales
 
-ficheros = open("fichero.txt","modo") --> apertura fichero
+#### apertura fichero
+ficheros = open("fichero.txt","modo")
 
-modo    
+#### modo    
 r   lectura
 w   escritura  
 a   añadir
 (a+,r+,w+)
 
-idf.close() --> cerrar fichero
+#### cerrar fichero
+idf.close() 
 
 ## Accion4s
 ### lectura
