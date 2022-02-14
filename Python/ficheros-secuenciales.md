@@ -38,10 +38,10 @@ while registro:
 
  
 1. importa la libreria de comandos
-import os
+    import os
  
 2. ejecuta el comando indicado
-os.system("comando")
+    os.system("comando")
 
 from os import system
 system("comando")
