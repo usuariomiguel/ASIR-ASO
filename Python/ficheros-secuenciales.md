@@ -4,10 +4,10 @@
 ficheros = open("fichero.txt","modo")
 
 #### modo    
-r   lectura
-w   escritura  
-a   añadir
-(a+,r+,w+)
+`r   lectura`
+`w   escritura` 
+`a   añadir`
+`(a+,r+,w+)`
 
 #### cerrar fichero
 idf.close() 
