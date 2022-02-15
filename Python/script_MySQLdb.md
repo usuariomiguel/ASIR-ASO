@@ -1,4 +1,5 @@
 1.  Ejemplo 1
+
         import MySQL 
         import os
         os.system("clear")
