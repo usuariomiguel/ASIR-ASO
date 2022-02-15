@@ -17,21 +17,21 @@ Ejecutamos la conexion, que nos devolvera n identificador de la misma:
 
 Para ello, creamos una variable donde incluimos la sentencia SQL que queramos ejecutar:
 
-    1. Opcion 1
+1. Opcion 1
 
-    dni=raw_input("DNI: ")
-    nom=raw_input("NOMBRE: )
-    ape=raw_input("APELLIDO: )
-    query = "INSERT INTO alumnos VALUES(dni,nom,ape)"
+        dni=raw_input("DNI: ")
+        nom=raw_input("NOMBRE: )
+        ape=raw_input("APELLIDO: )
+        query = "INSERT INTO alumnos VALUES(dni,nom,ape)"
     
-    2. Opcion 2
+2. Opcion 2
 
     %s string
     %d decimal
     %f float
     %i integer
 
-    query = "INSERT into alumnos values (%s,%s,%s)" % (dni,nom,ape) 
+        query = "INSERT into alumnos values (%s,%s,%s)" % (dni,nom,ape) 
 
 Ejecutamos la consulta creada:
 
