@@ -1,3 +1,5 @@
+# Uso de mysql en python
+
 1.  Ejemplo 1
 
         import MySQL 
