@@ -1,3 +1,5 @@
+# Uso de mysql en python
+
 1.  Ejemplo 1
 
         import MySQLdb
@@ -74,6 +76,9 @@
         cursor.execute(query)
         conn.commit()
         print "----------registro dado de alta----------"
+<<<<<<< HEAD
 
 3. 
 
+=======
+>>>>>>> c9d630665fd9dc45d9aa32c77d3cc8e7b21c6276
