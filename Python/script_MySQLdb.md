@@ -1,6 +1,6 @@
 1.  Ejemplo 1
 
-        import MySQL 
+        import MySQLdb
         import os
         os.system("clear")
         conn=MySQLdb.connect('localhost','root','usuario','instituto')
@@ -11,19 +11,43 @@
         --height=200 --center > datos.txt 2>/dev/null; echo $? > codret.txt")
 
         idf1=open('codret.txt','r')
-        r=idf.readline()
-        if r != 1:
-            idf=open('datos.txt','r')
-            reg=idf.readline()
+        r=idf1.readline()
+        if r == 0:
+                idf=open('datos.txt','r')
+                reg=idf.readline()
+                campos=reg.split("|")
+                dni=campos[0].upper()
+                nombre=campos[1].upper()
+                apellido=campos[2].upper()
+                telefono=campos[3]
+                correo=campos[4]
+                query="insert into alumnos (dni,nom,ape,telefono,email) values ('%s','%s','%s','%s','%s')" % (dni,nombre,apellido,felefono,correo)
+                cursor.execute(query)
+                conn.commit()
+                print "registro guardado"
+                idf.close()
+        else:
+                print "Has pulsado cancelar"
 
-        print "ACTUALIZAR REGISTRO"
+        query="select dni,nom,ape,telefono,email from alumnos"
+        cursor.execute(query)
+        resultado=cursor.fetchall()
+        for r in resultado:
+                cadena="DNI",r[0]+'\n'+"NOMBRE",r[1]+'\n'+"APELLIDO",r[2]+'\n'+"TELEFONO",r[3]+'\n'+"EMAIL",r[4]'\n'+"----------------"
+        
+        os.environ['mensaje']=cadena
+        os.system("yad --info --text=${mensaje} --width=200 --height=300 --center")
+        cursor.close()
+        conn.close()  
+
+        '''print "ACTUALIZAR REGISTRO"
         dni=raw_input("DNI: ")
         email=raw_input("CORREO: ")
 
         query="UPDATE alumnos SET email='%s' WHERE dni='%s'" % (email,dni)
         cursor.execute(query)
         conn.commit()
-        print "-------registro modificado-------"
+        print "-------registro modificado-------"'''
 
 2. Ejemplo 2
 
@@ -50,3 +74,6 @@
         cursor.execute(query)
         conn.commit()
         print "----------registro dado de alta----------"
+
+3. 
+
