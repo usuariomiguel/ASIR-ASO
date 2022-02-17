@@ -186,7 +186,7 @@
    - lista3 = lista1 + lista2
    - lista  = lista  + [elemento]
  
-   ####Copiar 
+   #### Copiar 
  
    1. Por referencia = se copia en los elementos en las dos listas
  
@@ -288,7 +288,7 @@
             sentencia
          sentencia
 
-   -*- coding: utf-8 -*- --> para que salga la ñ y los acentos
+   ``-*- coding: utf-8 -*-`` = para que salga la ñ y los acentos
     
    ### IF
     
