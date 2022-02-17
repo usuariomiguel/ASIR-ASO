@@ -86,8 +86,8 @@
  
    num = input("Dime un número")
  
-   python3 --> 
-      - input() - cadenas
+   python3 
+   - input() - cadenas
  
    Para hacer transformaciones de tipo, usaremos las funciones de casting:
    int(), float(), str()
