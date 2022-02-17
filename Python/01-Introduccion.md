@@ -154,15 +154,15 @@
    ### Eliminar elementos:
    
  
-      lista.pop(posición)
-      lista.remove('elemento')
+   - lista.pop(posición)
+   - lista.remove('elemento')
 
-      lista = ['hola',12,3.4,True,'Caracola'
-      lista.pop(0)#elimina elemento en la posición 0
-      print(lista)
-      lista.remove('caracola')#eliminar elemento caracola
-      print(lista)
-      print.pop()#elimina elemento en la última posición por defecto
+         lista = ['hola',12,3.4,True,'Caracola'
+         lista.pop(0)#elimina elemento en la posición 0
+         print(lista)
+         lista.remove('caracola')#eliminar elemento caracola
+         print(lista)
+         print.pop()#elimina elemento en la última posición por defecto
  
    ### Ordenar elementos:
  
