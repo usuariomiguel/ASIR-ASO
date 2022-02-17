@@ -165,21 +165,21 @@
  
    ### Ordenar elementos:
  
-   ``lista.sort()`` #ordena de la 'a' a la 'z'
-   ``lista.sort(reverse=True)`` #ordena de la 'z' a la 'a'
-   ``lista.reverse()`` #reverso actual de los elementos de la lista
-   ``lista.count("elemento")`` #cuenta cuantas veces aparece el elemento   en la lista
-   ``lista.index("elemento",posición inicial,posición final)``  #devuelve el posición que ocupa un elemento
+   - ``lista.sort()`` #ordena de la 'a' a la 'z'
+   - ``lista.sort(reverse=True)`` #ordena de la 'z' a la 'a'
+   - ``lista.reverse()`` #reverso actual de los elementos de la lista
+   - ``lista.count("elemento")`` #cuenta cuantas veces aparece el elemento   en la lista
+   - ``lista.index("elemento",posición inicial,posición final)``  #devuelve el posición que ocupa un elemento
  
    ### Funciones de listas y tuplas
  
    función(argumentos)
  
-   ``nombre para lista=list(tuple)`` -> conversión de tupla a lista
-   ``nombre para tupla=list(tuple)`` -> conversión de lista a tupla
-   ``max(tupla | lista)`` -> devuelve el máximo valor
-   ``min(tupla | lista)`` -> devuelve el mínimo valor
-   ``len(tupla | lista)`` -> devuelve el número de elementos
+   - ``nombre para lista=list(tuple)`` -> conversión de tupla a lista
+   - ``nombre para tupla=list(tuple)`` -> conversión de lista a tupla
+   - ``max(tupla | lista)`` -> devuelve el máximo valor
+   - ``min(tupla | lista)`` -> devuelve el mínimo valor
+   - ``len(tupla | lista)`` -> devuelve el número de elementos
  
  
    ### Concatenar y copiar listas y tuplas   
