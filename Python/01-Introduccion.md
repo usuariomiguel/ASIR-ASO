@@ -81,8 +81,8 @@
    Nos permite realizar entradas de datos por teclado
  
    python2
-      - input()     números
-      - raw_input() cadenas
+   - input()     números
+   - raw_input() cadenas
  
    num = input("Dime un número")
  
