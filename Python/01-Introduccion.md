@@ -183,14 +183,15 @@
  
  
    ### Concatenar y copiar listas y tuplas   
+   
+   - lista1 = list 1 + list 2
+   - lista3 = lista1 + lista2
+   - lista  = lista  + [elemento]
  
-   Concatenar  ->  lista1 = list 1 + list 2
-                   lista3 = lista1 + lista2
-                   lista  = lista  + [elemento]
+   ####Copiar 
  
-   Copiar 
- 
-   -Por referencia  -> se copia en los elementos en las dos listas
+   1. Por referencia \n 
+   se copia en los elementos en las dos listas
  
        lista = lista1
        #ejemplo
@@ -206,7 +207,7 @@
        [1, 2, 3, 4] [1, 2, 3, 4]
        [2, 3, 4] [2, 3, 4]
  
-   -Por valor -> se copia elementos en las dos listas pero si se modifica una no se modifican ambas
+   2. Por valor -> se copia elementos en las dos listas pero si se modifica una no se modifican ambas
  
        lista = lista1[:]
  
