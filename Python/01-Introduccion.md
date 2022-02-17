@@ -12,7 +12,7 @@
  
 ## Variables
 
-   nombre = variable
+   ``nombre = variable``
  
    - Pep 8: antes y después del signo igual DEBE haber uno (y solo uno) espacio en blanco
        nombre = 'pepe'
