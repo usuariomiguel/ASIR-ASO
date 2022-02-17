@@ -37,7 +37,6 @@
  
 ## Operadores
 
- 
    - Aritméticos: + - * /
       ``**`` Potencia
       ``//`` Cociente de la división entera
@@ -127,7 +126,6 @@
       tupla = ('hola',12,3.4,True,'Caracola')
  
 ## LISTAS
-
  
    - Pep 8: tiene que ir entre corchetes
  
@@ -190,49 +188,48 @@
  
    ####Copiar 
  
-   1. Por referencia \n 
-   se copia en los elementos en las dos listas
+   1. Por referencia = se copia en los elementos en las dos listas
  
-       lista = lista1
-       #ejemplo
-       lista1=[1,2,3,4]
+          lista = lista1
+          #ejemplo
+          lista1=[1,2,3,4]
+
+          lista = lista1[:]
+          print(lista1,lista2)
+          lista2.remove(1)
+          print(lista1,lista2)
+
+          Trabajando con LISTAS
+          _____________________
+          [1, 2, 3, 4] [1, 2, 3, 4]
+          [2, 3, 4] [2, 3, 4]
  
-       lista = lista1[:]
-       print(lista1,lista2)
-       lista2.remove(1)
-       print(lista1,lista2)
+   2. Por valor = se copia elementos en las dos listas pero si se modifica una no se modifican ambas
  
-       Trabajando con LISTAS
-       _____________________
-       [1, 2, 3, 4] [1, 2, 3, 4]
-       [2, 3, 4] [2, 3, 4]
- 
-   2. Por valor -> se copia elementos en las dos listas pero si se modifica una no se modifican ambas
- 
-       lista = lista1[:]
- 
-       #ejemplo
-       lista1=[1,2,3,4]
- 
-       lista = lista1[:]
-       print(lista1,lista2)
-       lista2.remove(1)
-       print(lista1,lista2)
- 
-       Trabajando con LISTAS
-       _____________________
-       [1, 2, 3, 4] [1, 2, 3, 4]
-       [1, 2, 3, 4] [2, 3, 4]
+          lista = lista1[:]
+
+          #ejemplo
+          lista1=[1,2,3,4]
+
+          lista = lista1[:]
+          print(lista1,lista2)
+          lista2.remove(1)
+          print(lista1,lista2)
+
+          Trabajando con LISTAS
+          _____________________
+          [1, 2, 3, 4] [1, 2, 3, 4]
+          [1, 2, 3, 4] [2, 3, 4]
  
 ## DICCIONARIOS
 
  
-   diccionario = {'clave1':valor1,'clave2':valor2,...}
-   diccionario[clave 1]
+   - diccionario = {'clave1':valor1,'clave2':valor2,...}
+   - diccionario[clave 1]
  
    ### Métodos de diccionarios
  
-   diccionario.items()     -> devuelve items
+   diccionario.items() = devuelve items
  
        for clave,valor in capitales.items():
        print ("La capital de",clave,"es",valor)
@@ -241,58 +238,59 @@
        La capital de Italia es Roma
        La capital de Francia es París
  
-   diccionario.keys()      -> devuelve las claves
+   diccionario.keys() = devuelve las claves
  
        países = capitales.keys()
        print(países)
        dict_keys(['España', 'Italia', 'Francia', 'Polonia', 'Australia', 'Egipto', 'Lituania', 'Portugal', 'Perú', 'Venezuela'])
  
-   diccionario.values()    -> devuelve valores
+   diccionario.values() = devuelve valores
  
        capi = capitales.values()
        print(capi)      
        dict values(['Madrid', 'Roma', 'París', 'Varsovia', 'Viena', 'El Cairo', 'Vilna', 'Lisboa', 'Lima', 'Caracas'])
 
-   diccionario.clear() ->  vacía el diccionario
-   diccionario['clave']=valor   -> 
-   diccionario.has_key(valor)  -> devuelve T or F si la clave existe en el diccionario
+   - diccionario.clear() = vacía el diccionario
+   - diccionario['clave']=valor   -> 
+   - diccionario.has_key(valor) = devuelve T or F si la clave existe en el diccionario
 
 ## Matrices
 
-    Matriz de dos dimensiones: filas y columnas
-    Matriz 2x3 --> 2 filas y 3 columnas
-    Matriz --> es una lista de listas
-    lista1 = [1,2,3]
-    lista1 = [4,5,6]
-    Matriz = [[lista1],[lista2]]
-    Matriz = [[1,2,3],[4,5,6]] --> 2x3
+   ### Matriz de dos dimensiones: filas y columnas
+         '''Matriz = es una lista de listas
+         Matriz 2x3 = 2 filas y 3 columnas'''
+         lista1 = [1,2,3]
+         lista1 = [4,5,6]
+         Matriz = [[lista1],[lista2]]
+         Matriz = [[1,2,3],[4,5,6]] #--> 2x3
 
 ## Funciones
 
-    función range() --> suma numeros
-        range(10) --> 0-9
-        range(m,n,s)
-            m--> valor inicial
-            n--> valor final (no cuenta este numero)
-            s--> incremento
-            range(10,0,-1)
-                10,9,8,7,6,5,4,3,2,1
+   ``función range()`` = suma numeros
+   - range(10) = 0-9
+   - range(m,n,s) 
+      - m--> valor inicial
+      - n--> valor final (no cuenta este numero)
+      - s--> incremento
+      ### Ejemplo 
+         range(10,0,-1)
+         10,9,8,7,6,5,4,3,2,1
             
-## estructura_de_control
+## Estructura_de_control
 
-    tabulaciones
+### Tabulaciones
 
-    estructura_de_control
-        sentencia
-        sentencia
-        estructura_de_control
+      estructura_de_control
+         sentencia
+         sentencia
+         estructura_de_control
             sentencia
-        sentencia
-    sentencia
+            sentencia
+         sentencia
 
-    -*- coding: utf-8 -*- --> para que salga la ñ y los acentos
+   -*- coding: utf-8 -*- --> para que salga la ñ y los acentos
     
-    ### IF
+   ### IF
     
     if compra <= 100:
         print("Pago en efectivo")
@@ -302,34 +300,37 @@
         print("Pago con tarjeta de credito)
     print("Fuera del if")
 
-    ### WHILE
+   ### WHILE
     
-    while condicion:
-        sentencias
+      while condicion:  
+         sentencias
     
-    mas='s'
-    suma=0
-    while mas == 's':
-        num=input("Dime un numero: ")
-        suma+=int(num)
-        mas=input("Seguir?")
-    print("La suma total es:",suma)
+          mas='s'
+          suma=0
+          while mas == 's':
+              num=input("Dime un numero: ")
+              suma+=int(num)
+              mas=input("Seguir?")
+          print("La suma total es:",suma)
 
-    ### FOR
-    
+   ### FOR
+   
+   #### rangos
     for numero in range (100):
         print(numero)
     
+   #### tablas 
     colores=["rojo","verde","azul","amarillo","negro","blanco"]
     for color in colores:
         print(color)
-    
+        
+   #### indices
     for i in range(len(colores)):
         print (colores[i])
     
 ## Funciones
 
-    Una función te permite definir un bloque de código reutilizable que se puede ejecutar muchas veces
+   Una función te permite definir un bloque de código reutilizable que se puede ejecutar muchas veces
 
     def nombre_funcion();
         codigo_funcion
@@ -338,37 +339,37 @@
     ##para llamar funcion y pasar parametros
     nombre_funcion()
     ##ejemplo
-    def saludo(nombre,edad): <--> def saludo(nombre,saludo="que tal?"): 
+    def saludo(nombre,edad): #def saludo(nombre,saludo="que tal?"): 
     
         if edad > 18:
             print("hola",nombre,"eres mayor  de edad")
         else:
             print("hola",nombre,"eres menor de edad")
     
-    saludo("lola",18) <-->  saludo(edad=18,nombre="lola")
+    saludo("lola",18) #saludo(edad=18,nombre="lola")
 
 ## Parametro arbitrarios
 
 
-    Son un numero desconocido de parametros
-    Llegan a la funcion en forma de dupla
-    Para definirlos se debe anteponer a su nombre un aseterisco(*)
+   - Son un numero desconocido de parametros.
+   - Llegan a la funcion en forma de tupla,
+   - Para definirlos varioas variables se debe anteponer a su nombre un aseterisco(*)
 
-        def carrito(nombre,ape,*productos):
-            print("carrito de",nombre)
-            for p in productos:
-                print(p)
+           def carrito(nombre,ape,*productos):
+               print("carrito de",nombre)
+               for p in productos:
+                   print(p)
 
-        nombre='Pepe'
-        apellido='Garcia'
-        prod1='tomates'
-        prod2='lechuga'
-        prod3='pan'
-        prod4='leche'
-        carrito(nombre,apellido,prod1,prod2,prod3,prod4)
+           nombre='Pepe'
+           apellido='Garcia'
+           prod1='tomates'
+           prod2='lechuga'
+           prod3='pan'
+           prod4='leche'
+           carrito(nombre,apellido,prod1,prod2,prod3,prod4)
 
-    En los paramtros arbitrarios, podemos pasar pares clave=valor. 
-    En este caso se debe anteponer al nombre de los parametros dos asteriscos (**)
+   En los paramtros arbitrarios, podemos pasar pares clave=valor. 
+   En este caso se debe anteponer al nombre de los parametros dos asteriscos (**)
     
         #!/usr/bin/env python3
         #-*- coding: utf-8 -*-
