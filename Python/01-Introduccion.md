@@ -39,9 +39,9 @@
 
  
    - Aritméticos: + - * /
-      ** Potencia
-      // Cociente de la división entera
-      % Resto de la división entera
+      ``**`` Potencia
+      ``//`` Cociente de la división entera
+      ``%`` Resto de la división entera
  
    Notación compacta
       a = a + b --> a +=b
@@ -81,8 +81,8 @@
    Nos permite realizar entradas de datos por teclado
  
    python2
-      - input()     - números
-      - raw_input() - cadenas
+      - input()     números
+      - raw_input() cadenas
  
    num = input("Dime un número")
  
