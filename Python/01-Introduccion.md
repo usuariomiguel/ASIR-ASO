@@ -368,8 +368,8 @@
            prod4='leche'
            carrito(nombre,apellido,prod1,prod2,prod3,prod4)
 
-   En los paramtros arbitrarios, podemos pasar pares clave=valor. 
-   En este caso se debe anteponer al nombre de los parametros dos asteriscos (**)
+   - En los paramtros arbitrarios, podemos pasar pares clave=valor. 
+   - En este caso se debe anteponer al nombre de los parametros dos asteriscos (**)
     
         #!/usr/bin/env python3
         #-*- coding: utf-8 -*-
