@@ -1,2 +1,0 @@
-nombre#apellido#tel#email#fechac
-Ana#Ranz#6345678090#anita.ranz@gmail.com#26/12/1992
