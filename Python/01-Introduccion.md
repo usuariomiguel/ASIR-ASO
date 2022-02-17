@@ -154,8 +154,8 @@
    ### Eliminar elementos:
    
  
-   lista.pop(posición)
-   lista.remove('elemento')
+ - lista.pop(posición)
+ - lista.remove('elemento')
 
       lista = ['hola',12,3.4,True,'Caracola'
       lista.pop(0)#elimina elemento en la posición 0
