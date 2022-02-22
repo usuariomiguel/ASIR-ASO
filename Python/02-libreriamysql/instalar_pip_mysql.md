@@ -1,3 +1,6 @@
+Error al instalar Guest-additions
+   sudo apt install virtualbox-guest-utils virtualbox-guest-dkms
+
 Error /var/lib/dpkg/lock
 
 1.     fuser -vki /var/lib/dpkg/lock
